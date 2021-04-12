@@ -1,6 +1,6 @@
 # Auth0 app to list rules for each application
 
-This app will generate a list of the applications in your auth0 tenant and the rules which apply to each application. This solution is protected by Auth0 authentication, and only available to a selected whitelist of users.
+This app will generate a list of the applications in your auth0 tenant and the rules that apply to each application. This solution is protected by Auth0 authentication, and only available to a selected whitelist of users.
 
 ## Creating the app
 
@@ -16,7 +16,7 @@ This app will generate a list of the applications in your auth0 tenant and the r
 
 ## Adding Rules List Functionality
 
-There are two options for how to implement this app.
+There are two options for how to implement this app. You will need [Ruby](https://www.ruby-lang.org/en/documentation/installation/) installed to run this app on your local server. 
 
 ### Option 1: Clone this App
 
