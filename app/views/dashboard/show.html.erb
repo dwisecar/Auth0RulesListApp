@@ -1,0 +1,27 @@
+<section class="jumbotron  text-center">
+  <h2><img class="jumbo-thumbnail" src="<%= @user.picture %>"/></h2>
+  <h1>Welcome, <%= @user.name %></h1>
+</section>
+<section class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Applications and applicable rules</div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <tr>
+          <th>Applications</th>
+          <th>Rules</th>
+        </tr>        
+      <% @pairs.each do |client, rules| %>
+        <tr>
+          <td><%= client["name"] %></td> 
+          <td>
+            <% rules.each do |rule| %>
+              <li><%= rule %> </li> 
+            <% end %> 
+          </td>
+        </tr>   
+      <% end %>
+      </table>
+    </div>
+  </div>
+</section>
